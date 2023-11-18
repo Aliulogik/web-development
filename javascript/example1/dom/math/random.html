@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 id="random-number"></h1>
+        <button id="btn">Generate Random Number</button>
+    </center>
+</body>
+<script>
+    random = document.querySelector("#random-number")
+    btn = document.querySelector("#btn")
+    .addEventListener("click",()=>{
+        let randomNumber = Math.floor(Math.random()*20)
+        random.innerHTML = randomNumber
+        // console.log(randomNumber);
+    })
+</script>
+</html>

@@ -1,0 +1,31 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    display: flex;
+
+}
+@-webkit-keyframes slidefromleft{
+    from{
+        transform: translate(-300px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+@-webkit-keyframes changecolors{
+    0% {background-color: cornflowerblue;}
+    20%{background-color: brown;}
+    40%{background-color: lightslategray;}
+    80%{background-color: darkorange;}
+
+}
+
+h1{
+    -webkit-animation-name: slidefromleft, changecolors;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 2;
+}
